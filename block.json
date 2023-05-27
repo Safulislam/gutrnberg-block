@@ -1,0 +1,46 @@
+{
+	"apiVersion": 2,
+	"name": "sotech-blocks/team-members",
+	"title": "Team Members",
+	"category": "media",
+	"icon": "groups",
+	"description": "A team members grid.",
+	"keywords":["Team", "Members", "Grid"],
+	"supports": {
+		"html": false,
+		"align": ["wide"]
+	},
+	"textdomain": "team-members",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 2
+		}
+	},
+	"example": {
+		"attributes": {
+			"columns": 2
+		},
+		"innerBlocks":[
+			{
+				"name" : "sotech-blocks/team-member",
+				"attributes": {
+					"name": "John Doe",
+					"bio": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.",
+					"socialLinks":[{"icon":"facebook"},{"icon": "twitter"},{"icon": "instagram"}]
+				}
+			},
+			{
+				"name" : "sotech-blocks/team-member",
+				"attributes": {
+					"name": "Jane Doe",
+					"bio": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.",
+					"socialLinks":[{"icon":"facebook"},{"icon": "twitter"},{"icon": "instagram"}]
+				}
+			}
+		]
+	}
+}
