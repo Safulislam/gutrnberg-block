@@ -10,10 +10,11 @@
 	flex-wrap: wrap;
 	margin-left: -10px;
 	margin-right: -10px;
+	
 	@for $i from 1 through 6 {
-		&.has-#{i}-columns{
+		&.has-#{$i}-columns {
 			.wp-block-sotech-blocks-team-member {
-				width: cale(100% / #{$i} - 20px);
+				width: calc(100% / #{$i} - 20px);
 			}
 		}
 	}
